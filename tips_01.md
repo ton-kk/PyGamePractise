@@ -59,7 +59,7 @@ Word_rect.center = (wWidth/2, wHeight/2)
 ![2_done](https://user-images.githubusercontent.com/58809086/72351111-1097fa80-3723-11ea-9889-ab7b22684dff.png)
 
 
-### 2.get key event
+### 3.get key event
 it's very simple key event.  
 if press space key, the text move (0~10, 0~10)  
 
