@@ -36,6 +36,14 @@ def main():
             if event.type == KEYDOWN:
                 if event.key == K_SPACE:
                     Word_rect.move_ip(10 * random(), 10 * random())
+                elif event.key == K_LEFT:
+                    Word_rect.move_ip(-10, 0)
+                elif event.key == K_RIGHT:
+                    Word_rect.move_ip(10, 0)
+                elif event.key == K_UP:
+                    Word_rect.move_ip(0, -10)
+                elif event.key == K_DOWN:
+                    Word_rect.move_ip(0, 10)
         pygame.display.update()
     FPSClock.tick(wFPS)
 

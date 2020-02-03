@@ -63,7 +63,10 @@ Word_rect.center = (wWidth/2, wHeight/2)
 
 ### 3.get key event
 it's very simple key event.  
-if press space key, the text move (0~10, 0~10)  
+press space key, the text random move. (0~10, 0~10)  
+press arrow keys, the text move 10 points in the direction of the arrow.  
+"KEYDOWN" event only once execute.  
+Keep pressing the key, not be executed continuously.
 
 ```python
 # in loop(while True:) section
@@ -74,6 +77,14 @@ if press space key, the text move (0~10, 0~10)
             if event.type == KEYDOWN:
                 if event.key == K_SPACE:
                     Word_rect.move_ip(10 * random(), 10 * random())
+                elif event.key == K_LEFT:
+                    Word_rect.move_ip(-10, 0)
+                elif event.key == K_RIGHT:
+                    Word_rect.move_ip(10, 0)
+                elif event.key == K_UP:
+                    Word_rect.move_ip(0, -10)
+                elif event.key == K_DOWN:
+                    Word_rect.move_ip(0, 10)
         pygame.display.update()
 ```
 ---
