@@ -92,7 +92,7 @@ Keep pressing the key, not be executed continuously.　　
 
 ### 4.get pressed keys
 Between pressing keys, execute key event continuously.  
-Use get_pressed(). and adjust framerate.
+Use get_pressed(). and adjust framerate.  
 (20 FPS is too fast to recognaze that the word moving.)  
 
 ```python
@@ -108,3 +108,4 @@ wFPS = 10
         if pressed[K_DOWN]:
             Word_rect.move_ip(0, 1)
 ```
+---
