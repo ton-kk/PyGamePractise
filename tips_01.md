@@ -66,7 +66,7 @@ it's very simple key event.
 press space key, the text random move. (0~10, 0~10)  
 press arrow keys, the text move 10 points in the direction of the arrow.  
 "KEYDOWN" event only once execute.  
-Keep pressing the key, not be executed continuously.
+Keep pressing the key, not be executed continuously.　　
 
 ```python
 # in loop(while True:) section
@@ -88,3 +88,23 @@ Keep pressing the key, not be executed continuously.
         pygame.display.update()
 ```
 ---
+
+
+### 4.get pressed keys
+Between pressing keys, execute key event continuously.  
+Use get_pressed(). and adjust framerate.
+(20 FPS is too fast to recognaze that the word moving.)  
+
+```python
+wFPS = 10
+# in loop(while True:) section
+        pressed = pygame.key.get_pressed()
+        if pressed[K_LEFT]:
+            Word_rect.move_ip(-1, 0)
+        if pressed[K_RIGHT]:
+            Word_rect.move_ip(1, 0)
+        if pressed[K_UP]:
+            Word_rect.move_ip(0, -1)
+        if pressed[K_DOWN]:
+            Word_rect.move_ip(0, 1)
+```
