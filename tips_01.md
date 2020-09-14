@@ -113,3 +113,5 @@ wFPS = 10
 ### 4.2020 09 postscript  
 i don't have enough time to learn PyGame.  
 i think i will not touch this project for a while.  
+
+spend all time to learning about nlp now.
