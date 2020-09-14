@@ -109,3 +109,7 @@ wFPS = 10
             Word_rect.move_ip(0, 1)
 ```
 ---
+
+2020 09 postscript
+i don't have enough time to learn PyGame.
+i think i will not touch this project for a while.
